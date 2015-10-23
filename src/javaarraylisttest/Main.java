@@ -33,6 +33,20 @@ public class Main {
 		
 		// Print out the empty ArrayList
 		System.out.println("Contents: " + testArray);
+		
+		// Fill the ArrayList with one character Strings
+		for (char i = 'a'; i < 200; i += 4) {
+			testArray.add(i + "");
+		}
+		
+		// Print out the one character String filled ArrayList
+		System.out.println("Contents: " + testArray);
+		
+		// Remove a specific one character String from the ArrayList
+		testArray.remove("¥");
+		
+		// Print out the ArrayList missing the one character String
+		System.out.println("Contents: " + testArray);
 	}
 	
 }
